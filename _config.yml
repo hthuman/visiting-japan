@@ -1,0 +1,66 @@
+# https://github.com/ronv/ultra
+# https://ultra-jekyll.netlify.app/
+remote_theme: ronv/ultra
+
+title: Visiting Japan
+description: What you need to know for an enjoyable visit
+
+permalink: pretty
+
+paginate:            1000
+paginate_path:       "/page:num/"
+baseurl:             "/visiting-japan"
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-sitemap
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
