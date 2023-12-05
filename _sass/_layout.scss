@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    margin: 0 auto;
+    max-width: 55rem;
+    padding: 1rem;
+}
+
+strong, b, h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: .5rem;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+hr {
+    background: black;
+    border: 0;
+    height: 2px;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+
+    tr {
+        border-bottom: 1px solid black;
+    }
+
+    td {
+        padding: 0.5rem;
+    }
+}
+
+img {
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+footer {
+    margin: 2rem 0;
+}
+
+.maintitle {
+    background: black;
+    color: white;
+}
+
+.maintitle a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Two columns, sidebar and content*/
+.row {
+	display: grid;
+	grid-template-columns: 12em minmax(35em, 1fr);
+	column-gap: 2em;
+}
+
+/* Sidebar */
+.sidebar h3 {
+    background: black;
+    color: white;
+}
+.sidebar ul {
+   list-style-type: none;
+   padding-left: 1em;
+}
+
+.active {
+    background: black;
+    color: white;
+    padding: 0;
+}
+
+.active a {
+   color: white;
+}
