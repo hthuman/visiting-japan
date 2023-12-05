@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="maintitle"><h1><a href="{{ site.baseurl }}/">Visiting Japan</a></h1></div>
+      <main id="main" role="main">
+        <div class="row">
+          <div class="column left">
+            {% include sidebar.html %}
+          </div>
+          <div class="column right">
+            {{ content }}
+          </div>
+        </div>
+      </main>
+    <hr>
+    {% include footer.html %}
+  </body>
+</html>
