@@ -1,0 +1,17 @@
+<div class="sidebar">
+<h3>General</h3>
+<ul>
+  <li {% if page.url == "/" %}class="active"{% endif %}><a href="{{ site.baseurl }}/">Main</a></li>
+</ul>
+<h3>History</h3>
+<ul>
+  <li {% if page.url == "/history" %}class="active"{% endif %}><a href={{"/history" | relative_url }}>Summary</a></li>
+</ul>
+<h3>Language</h3>
+<ul>
+  <li {% if page.url == "/cheatsheet" %}class="active"{% endif %}><a href={{"/cheatsheet" | relative_url }}>Cheatsheet</a></li>
+</ul>
+<h3>Food</h3>
+<h3>Culture</h3>
+<h3>Miscellaneous</h3>
+</div>
